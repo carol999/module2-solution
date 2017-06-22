@@ -2,21 +2,166 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Styling Text</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Module2-Menu</title>
 <style>
-.style {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #0000ff;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 24px; /* points (pt) are used in print, not screen.*/
-  text-transform: uppercase;
-  text-align: right;  
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+p{
+  font-family: Palatino Linotype;
+  color: black;
+  font-weight: bold;
+  font-size: 15px; 
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+h1 {
+  font-family: Palatino Linotype;
+  color: #cc6699;
+  font-weight: bold;
+  font-size: 32px; 
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#box1{
+  background-color: grey;
+  padding: 0px;
+  border: 3px solid black;
+  width: 33.3%;
+  height: 200px;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  float: left;
+}
+
+#box2{
+  background-color: grey;
+  padding: 0px;
+  border: 3px solid black;
+  width: 33.3%;
+  height: 200px;
+  margin-top: 50px;
+  float: left;
+}
+
+#box3{
+  background-color: grey;
+  padding: 0px;
+  border: 3px solid black;
+  width: 33.3%;
+  height: 200px;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  float: left;
+}
+
+
+#chicken{
+  position: relative;
+  margin-top: 0px;
+  margin-right: 0px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  right: 1px;
+  padding:1px;
+  border:1px solid black;
+  width:35%;
+  height:16%;
+  background-color:#99ccff;
+  text-align: center;
+  float: right;
+}
+
+#beef{
+  position: relative;
+  margin-top: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  right: 1px;
+  padding:1px;
+  border:1px solid black;
+  width:35%;
+  height:16%;
+  background-color:#ffcc00;
+  text-align: center;
+  float: right;
+}
+
+#sushi{
+  position: relative;
+  margin-top: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  right: 1px;
+  padding:1px;
+  border:1px solid black;
+  width:35%;
+  height:16%;
+  background-color:#7070db;
+  text-align: center;
+  float:right;
+}
+
+@media (min-width: 992px) {
+  #box1,#box2,#box3 {
+    width: 30%;
+    float:left;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #box1,#box2{
+    width:45%;
+    float: left;
+  }
+  #box3{
+    width:92.22%;
+    float: left;
+  }
+}
+
+@media (max-width: 767px) {
+  #box1,#box2,#box3 {
+    width: 91.66%;
+    float: left;
+  }
+  #box2{
+    margin-left: 20px;
+  }
+}
+
 </style>
 </head>
 <body>
-<p>You can get commonly used font combinations from <a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp">http://www.w3schools.com/cssref/css_websafe_fonts.asp</a>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quod necessitatibus a ullam dolorum amet reprehenderit sit laudantium reiciendis aperiam. </p>
-<p class="style">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam fugiat repudiandae fugit porro commodi amet possimus sit atque, non obcaecati, et repellendus enim perferendis nobis quibusdam vero nulla magni quaerat!</p>
+<h1>Our Menu</h1>
+
+<div id="box1">
+  <p id="chicken">Chicken</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex et similique cupiditate dignissimos delectus nulla dolore, eos dolorum quidem excepturi, facere non repellat accusamus, atque? Id voluptate eos et accusantium.
+  </p>
+</div>
+
+<div id="box2">
+  <p id="beef">Beef</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex et similique cupiditate dignissimos delectus nulla dolore, eos dolorum quidem excepturi, facere non repellat accusamus, atque? Id voluptate eos et accusantium.
+  </p>
+ </div>
+
+<div id="box3">
+  <p id="sushi">Sushi</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex et similique cupiditate dignissimos delectus nulla dolore, eos dolorum quidem excepturi, facere non repellat accusamus, atque? Id voluptate eos et accusantium.
+  </p>
+</div>
+
 </body>
 </html>
