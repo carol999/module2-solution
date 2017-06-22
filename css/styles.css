@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
   box-sizing: border-box;
   margin: 0;
@@ -134,3 +135,141 @@ h1 {
     margin-left: 20px;
   }
 }
+=======
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  font-family: Palatino Linotype;
+  color: black;
+  font-weight: bold;
+  font-size: 15px; 
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+h1 {
+  font-family: Palatino Linotype;
+  color: #cc6699;
+  font-weight: bold;
+  font-size: 32px; 
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#box1{
+  background-color: grey;
+  padding: 0px;
+  border: 3px solid black;
+  width: 33.3%;
+  height: 200px;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  float: left;
+}
+
+#box2{
+  background-color: grey;
+  padding: 0px;
+  border: 3px solid black;
+  width: 33.3%;
+  height: 200px;
+  margin-top: 50px;
+  float: left;
+}
+
+#box3{
+  background-color: grey;
+  padding: 0px;
+  border: 3px solid black;
+  width: 33.3%;
+  height: 200px;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  float: left;
+}
+
+
+#chicken{
+  position: relative;
+  margin-top: 0px;
+  margin-right: 0px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  right: 1px;
+  padding:1px;
+  border:1px solid black;
+  width:35%;
+  height:16%;
+  background-color:#99ccff;
+  text-align: center;
+  float: right;
+}
+
+#beef{
+  position: relative;
+  margin-top: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  right: 1px;
+  padding:1px;
+  border:1px solid black;
+  width:35%;
+  height:16%;
+  background-color:#ffcc00;
+  text-align: center;
+  float: right;
+}
+
+#sushi{
+  position: relative;
+  margin-top: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  right: 1px;
+  padding:1px;
+  border:1px solid black;
+  width:35%;
+  height:16%;
+  background-color:#7070db;
+  text-align: center;
+  float:right;
+}
+
+@media (min-width: 992px) {
+  #box1,#box2,#box3 {
+    width: 30%;
+    float:left;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #box1,#box2{
+    width:45%;
+    float: left;
+  }
+  #box3{
+    width:92.22%;
+    float: left;
+  }
+}
+
+@media (max-width: 767px) {
+  #box1,#box2,#box3 {
+    width: 91.66%;
+    float: left;
+  }
+  #box2{
+    margin-left: 20px;
+  }
+}
+>>>>>>> 98085ad5a939a0bb4cf0a53553444e61d539345d
